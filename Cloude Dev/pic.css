@@ -1,0 +1,63 @@
+
+
+/* Create two equal columns that sits next to each other */
+
+img {
+  float: center;
+  width: 1000px;
+  height: 1000px;
+  object-fit: cover;
+}
+
+.container{
+  width: 100%;
+  text-align: center;
+}
+h1{
+  font-weight: normal;
+  font-size: 35px;
+  position: relative;
+  margin: 40px 0;
+}
+h1::before{
+  content: '';
+  position: absolute;
+  width: 100px;
+  height: 3px;
+  background-color: rgb(9, 69, 92);
+  bottom: -10px;
+  left: 50px;
+  transform: translate(-50%);
+  animation: animate 4s linear infinite;
+}
+@keyframes animate{
+  0%{
+    width: 100px;
+  }
+  50%{
+    width: 200px;
+  }
+  100%{
+    width: 100px;
+  }
+  }
+
+  .top-content{
+    background-color: rgb(243, 243, 243);
+    width: 90%;
+    margin: 0 auto 20px auto;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px lightgray;
+  }
+  h3{
+    height: 100%;
+    background-color: rgb(221, 221, 221);
+    line-height: 60px;
+    padding: 0 50px;
+    color: #000;
+    font-size: 88px;
+  }
+
